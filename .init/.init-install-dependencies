@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/tmp/kavia/workspace/code-generation/smart-cooking-assistant-6315-6302/cooking_assistant_app_frontend"
+}
