@@ -20,7 +20,7 @@ function useDocumentTitle(title) {
 // PUBLIC_INTERFACE
 function App() {
   /** Root application shell wiring routing, sidebar, header, and providers. */
-  useDocumentTitle('smart cooking agent');
+  useDocumentTitle('Smart Cooking Agent');
   return (
     <BrowserRouter>
       <NotesProvider>
@@ -53,7 +53,7 @@ function HeaderNav() {
     <header className="header">
       <div className="brand">
         <div className="logo">🍳</div>
-        Smart Cooking
+        Smart Cooking Agent
       </div>
       <nav className="nav">
         <NavLink to="/" end className={({isActive}) => isActive ? 'active' : ''}>Recipes</NavLink>
@@ -67,7 +67,7 @@ function HeaderNav() {
 function Footer() {
   return (
     <footer className="footer">
-      <small>© {new Date().getFullYear()} Smart Cooking Assistant</small>
+      <small>© {new Date().getFullYear()} Smart Cooking Agent</small>
       <small>Primary #FF7043 · Secondary #FFC107 · Light theme</small>
     </footer>
   );
