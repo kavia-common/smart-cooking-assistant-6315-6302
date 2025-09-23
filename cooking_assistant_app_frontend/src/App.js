@@ -53,7 +53,7 @@ function HeaderNav() {
     <header className="header">
       <div className="brand">
         <div className="logo">🍳</div>
-        Smart Cooking Agent
+        cHEF
       </div>
       <nav className="nav">
         <NavLink to="/" end className={({isActive}) => isActive ? 'active' : ''}>Recipes</NavLink>
@@ -67,7 +67,7 @@ function HeaderNav() {
 function Footer() {
   return (
     <footer className="footer">
-      <small>© {new Date().getFullYear()} Smart Cooking Agent</small>
+      <small>© {new Date().getFullYear()} cHEF</small>
       <small>Primary #FF7043 · Secondary #FFC107 · Light theme</small>
     </footer>
   );
