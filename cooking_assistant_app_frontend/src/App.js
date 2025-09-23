@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import RecipesPage from './pages/RecipesPage';
@@ -10,9 +10,17 @@ import { ShoppingListProvider } from './context/ShoppingListContext';
 import { FavoritesProvider } from './context/FavoritesContext';
 import { NotesProvider } from './context/NotesContext';
 
+/* Set document title on app load */
+function useDocumentTitle(title) {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+}
+
 // PUBLIC_INTERFACE
 function App() {
   /** Root application shell wiring routing, sidebar, header, and providers. */
+  useDocumentTitle('smart cooking agent');
   return (
     <BrowserRouter>
       <NotesProvider>
