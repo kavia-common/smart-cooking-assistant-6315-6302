@@ -20,7 +20,7 @@ function useDocumentTitle(title) {
 // PUBLIC_INTERFACE
 function App() {
   /** Root application shell wiring routing, sidebar, header, and providers. */
-  useDocumentTitle('Smart Cooking Agent');
+  useDocumentTitle('cHEF');
   return (
     <BrowserRouter>
       <NotesProvider>
