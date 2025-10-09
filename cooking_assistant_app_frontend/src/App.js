@@ -53,7 +53,7 @@ function HeaderNav() {
     <header className="header">
       <div className="brand">
         <div className="logo">🍳</div>
-        Smart Cooking Agent
+        Smart Cooking chef
       </div>
       <nav className="nav">
         <NavLink to="/" end className={({isActive}) => isActive ? 'active' : ''}>Recipes</NavLink>
