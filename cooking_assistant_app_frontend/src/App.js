@@ -13,7 +13,10 @@ import { NotesProvider } from './context/NotesContext';
 /* Set document title on app load */
 function useDocumentTitle(title) {
   useEffect(() => {
-    document.title = title;
+    // Ensure app title includes the '--pro' suffix consistently
+    const suffix = '--pro';
+    const normalized = title?.endsWith(suffix) ? title : `${title}${suffix}`;
+    document.title = normalized;
   }, [title]);
 }
 
