@@ -53,7 +53,16 @@ function HeaderNav() {
     <header className="header">
       <div className="brand">
         <div className="logo">🍳</div>
-        Smart chef
+        <span>Smart chef</span>
+        <span style={{ 
+          fontWeight: 800, 
+          marginLeft: 6, 
+          padding: '2px 8px',
+          borderRadius: 8,
+          background: 'rgba(255,255,255,0.18)',
+          color: '#ffffff',
+          letterSpacing: 0.3
+        }}>pro</span>
       </div>
       <nav className="nav">
         <NavLink to="/" end className={({isActive}) => isActive ? 'active' : ''}>Recipes</NavLink>
