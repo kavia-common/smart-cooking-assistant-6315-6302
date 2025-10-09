@@ -29,7 +29,7 @@ export default function RecipesPage() {
 
   return (
     <div>
-      <h2 style={{ marginTop: 0 }}>Browse Recipes</h2>
+      <h2 style={{ marginTop: 0 }}>Browse Recipes xyz</h2>
       <SearchFilterBar onChange={setFilters} />
       {loading ? <div className="card">Loading...</div> : (
         <div className="recipe-grid">
