@@ -56,9 +56,9 @@ function HeaderNav() {
         Smart chef
       </div>
       <nav className="nav">
-        <NavLink to="/" end className={({isActive}) => isActive ? 'active' : ''}>Recipes</NavLink>
-        <NavLink to="/favorites" className={({isActive}) => isActive ? 'active' : ''}>Favorites</NavLink>
-        <NavLink to="/notes" className={({isActive}) => isActive ? 'active' : ''}>Notes</NavLink>
+        <NavLink to="/" end className={({isActive}) => isActive ? 'active' : ''}>Recipes pro</NavLink>
+        <NavLink to="/favorites" className={({isActive}) => isActive ? 'active' : ''}>Favorites pro</NavLink>
+        <NavLink to="/notes" className={({isActive}) => isActive ? 'active' : ''}>Notes pro</NavLink>
       </nav>
     </header>
   );
