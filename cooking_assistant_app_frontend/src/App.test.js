@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders Smart Cooking Agent brand', () => {
+test('renders Smart Cooking Agent--pro brand', () => {
   render(<App />);
-  const heading = screen.getByText(/Smart Cooking Agent/i);
-  expect(heading).toBeInTheDocument();
+  const brand = screen.getByText(/Smart Chef--pro/i);
+  expect(brand).toBeInTheDocument();
 });
